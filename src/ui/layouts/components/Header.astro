@@ -1,0 +1,77 @@
+---
+import { getRelativeLocaleUrl } from "astro:i18n";
+import i18next, { t } from "i18next";
+import { Trans, HeadHrefLangs } from "astro-i18next/components";
+
+type Props = {
+  /**
+   *
+   */
+  language: "en" | "es";
+  /**
+   *
+   */
+  transparent: boolean;
+};
+
+const { language, transparent } = Astro.props;
+---
+
+<header class={transparent ? "header transparent" : "header"}>
+  <div class="header__container">
+    <a
+      href={`/${language}${getRelativeLocaleUrl("es", "routes.home")}`}
+      class="header__logo"
+    >
+      <img
+        loading="lazy"
+        src="src/ui/assets/images/static/logo.png"
+        alt="Kev Coder Logo"
+      />
+    </a>
+
+    <nav class="header__links">
+      <a href={`/${language}${getRelativeLocaleUrl("es", "routes.home")}`}>
+        {t("links.home")}
+        <span></span>
+      </a>
+
+      <a href={`/${language}${getRelativeLocaleUrl("es", "routes.about")}`}>
+        {t("links.about")}
+        <span></span>
+      </a>
+
+      <a href={`/${language}${getRelativeLocaleUrl("es", "routes.works")}`}>
+        {t("links.works")}
+        <span></span>
+      </a>
+
+      <a
+        href="https://links.kevcoder.co/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        {t("links.contact")}
+        <span></span>
+      </a>
+
+      <a href="/blog">
+        Blog
+        <span></span>
+      </a>
+
+      <!-- <button
+        data-active={language === "es" ? true : false}
+        onClick={() => changeLanguage("es")}
+      >
+        ES
+      </button> -->
+      <!-- <button
+        data-active={language === "en" ? true : false}
+        onClick={() => changeLanguage("en")}
+      >
+        EN
+      </button> -->
+    </nav>
+  </div>
+</header>

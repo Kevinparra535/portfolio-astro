@@ -1,0 +1,171 @@
+@import "./../tokens/colors";
+@import "./../tokens/spacings";
+@import "./../tokens/typos";
+
+.header {
+  padding: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  width: 100%;
+  animation: reveal-text-up 1s ease-in-out 0.4s both;
+  background-color: $color-bg-claro;
+
+  &.transparent {
+    background: linear-gradient(
+      180deg,
+      rgba(0, 0, 5, 0.5) 0%,
+      rgba(0, 0, 5, 0) 100%
+    );
+
+    a {
+      transition: all 0.5s ease-in-out;
+      color: $color-claro !important;
+    }
+
+    img {
+      transition: all 0.5s ease-in-out;
+      filter: invert(100%);
+    }
+  }
+
+  &__container {
+    padding: $space $space_x2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  &__logo {
+    display: flex;
+    align-items: center;
+    margin-right: $space_x2;
+
+    img {
+      width: 80px;
+      height: 40px;
+      object-fit: cover;
+    }
+  }
+
+  &__menu {
+    button {
+      padding: 0;
+      display: flex;
+      font-weight: $black;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      background-color: transparent;
+
+      &:hover {
+        background-color: transparent !important;
+      }
+    }
+
+    svg {
+      width: 50px;
+    }
+  }
+
+  &__links {
+    display: flex;
+    align-items: flex-start;
+
+    a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      margin-left: $space_x2;
+      font-weight: $medium;
+      text-decoration: none;
+      transition: all 0.3s ease-in-out;
+      color: $color-oscuro;
+
+      span {
+        padding: 3px;
+        width: 2px;
+        height: 2px;
+        border-radius: 50%;
+        transition: all 0.3s ease-in-out;
+        background-color: transparent;
+      }
+
+      &.active {
+        font-weight: $bolder;
+
+        span {
+          background-color: $color-oscuro;
+        }
+
+        &:hover {
+          color: $color-oscuro;
+        }
+      }
+
+      &:hover {
+        color: $color-primario;
+      }
+    }
+  }
+
+  button {
+    margin: 0 0 0 $space_x2;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    font-family: $Fuente1;
+    font-weight: $bolder;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    color: $color-oscuro;
+
+    &[data-active="true"] {
+      outline: 2px solid $color-oscuro;
+
+      &:hover {
+        color: $color-oscuro;
+        background-color: transparent;
+      }
+    }
+
+    &:hover {
+      background-color: $color-oscuro;
+      color: $color-bg-claro;
+    }
+  }
+
+  @include media(tablet) {
+    &__container {
+      padding: $space_x4 $space_x2;
+      width: 90%;
+    }
+
+    &__logo {
+      img {
+        width: 80px;
+        height: 40px;
+        object-fit: cover;
+        image-rendering: optimizeQuality;
+      }
+    }
+  }
+
+  @include media(desktop-s) {
+    &__container {
+      padding: $space_x4 $space_x2;
+      width: 80%;
+    }
+
+    &__logo {
+      img {
+        width: 100px;
+        height: 50px;
+      }
+    }
+  }
+}

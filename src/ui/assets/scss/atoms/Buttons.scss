@@ -1,0 +1,78 @@
+@import "./../tokens/colors";
+@import "./../tokens/spacings";
+@import "./../tokens/typos";
+
+.callToActions {
+  padding: $space;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 285px;
+  font-weight: $bolder;
+  text-decoration: none !important;
+  animation: reveal-text-up 1s ease-in-out 1s both;
+  transition: all 0.3s ease-in-out;
+  color: $color-oscuro;
+  @include font-size(18px);
+
+  span {
+    padding: $space_x3;
+    position: absolute;
+    left: -15px;
+    z-index: -1;
+    border-radius: 50%;
+    animation: none;
+    width: 10px;
+    transition: all 0.3s ease-in-out;
+    background-color: get-opacity($color-oscuro, 0.1);
+  }
+
+  svg {
+    transform: translateX(-5px);
+    transition: all 0.3s ease-in-out;
+  }
+
+  &.negative {
+    color: $color-claro;
+
+    span {
+      background-color: get-opacity($color-claro, 0.1);
+    }
+
+    &:hover {
+      span {
+        background-color: get-opacity($color-claro, 0.15);
+      }
+    }
+  }
+
+  &:hover {
+    span {
+      animation: bounce-in 1s ease-in-out both;
+      border-radius: 50px;
+      background-color: get-opacity($color-oscuro, 0.15);
+    }
+
+    svg {
+      transform: translateX(0px);
+    }
+  }
+
+  @include media(tablet) {
+    margin: 0;
+    max-width: 260px;
+    @include font-size(18px);
+  }
+
+  @include media(desktop-s) {
+    max-width: 260px;
+    @include font-size(18px);
+  }
+
+  @include media(desktop-m) {
+    max-width: 285px;
+    @include font-size(20px);
+  }
+}

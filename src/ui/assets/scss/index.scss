@@ -1,0 +1,30 @@
+@import "./vendors/bootstrap_reboot";
+@import "./vendors/breakpoints";
+@import "./vendors/grids";
+@import "./vendors/animations";
+@import "./organims/globales";
+
+@import "./tokens/colors";
+@import "./tokens/spacings";
+@import "./tokens/typos";
+
+@import "./atoms/Buttons";
+@import "./atoms/Utils";
+
+@import "./organims/fonts";
+
+// @import "./atoms/Cursor";
+@import "./containers/Loaders/GeneralLoaders";
+@import "./components/Header";
+@import "./components/Menu/Menu";
+@import "./components/BurguerIcon";
+@import "./components/Footer";
+
+@import "./containers/Home/Main";
+@import "./containers/Home/About";
+@import "./containers/Home/Works";
+@import "./containers/Home/Agencies";
+
+@import "./components/Works/ModalWorks";
+
+@import "./containers/About/About";

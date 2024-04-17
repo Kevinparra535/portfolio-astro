@@ -1,0 +1,41 @@
+//slide down flecha header
+.animated {
+  position: relative;
+  z-index: 1;
+
+  &.on {
+    opacity: 0;
+  }
+}
+
+.animated.slide-down.in-view {
+  animation-name: slide-down;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+.animated.slide-up.in-view {
+  animation-name: slide-up;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+.animated.fade-in.in-view {
+  animation: fade-in 1s ease 0s 1s normal forwards;
+}
+
+.animated.scale-in.in-view {
+  animation: scale-in 1s forwards;
+}
+
+.animated.scale-in-opacity.in-view {
+  animation: scale-in-opacity 1s forwards;
+}
+
+.animated.bounceIn.in-view {
+  animation: bounce-in 1s ease-in-out both;
+}
+
+.animated.reveal-text-up.in-view {
+  animation: reveal-text-up 1s ease-in-out 0s both;
+}

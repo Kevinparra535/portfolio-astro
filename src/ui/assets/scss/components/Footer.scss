@@ -1,0 +1,140 @@
+@import "./../tokens/colors";
+@import "./../tokens/spacings";
+@import "./../tokens/typos";
+
+.footer {
+  width: 100%;
+  height: 100%;
+  background-color: $color-bg-oscuro;
+  background-image: url("../../images/static/footer__pattern.png");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: all 0.3s ease-in-out;
+
+  &__container {
+    padding: 80px $space_x2 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    min-height: 450px;
+    max-width: 100%;
+    user-select: none;
+    transition: all 0.3s ease-in-out;
+
+    &__text {
+      width: 100%;
+      height: 100%;
+      color: $color-claro;
+      text-align: center;
+      transition: all 0.3s ease-in-out;
+
+      h4 {
+        margin-bottom: $space_x3;
+        font-weight: $black;
+        transition: all 0.3s ease-in-out;
+        @include font-size(40px);
+        line-height: 40px;
+      }
+
+      p {
+        margin-bottom: 40px;
+        transition: all 0.3s ease-in-out;
+        @include font-size(18px);
+      }
+
+      a {
+        margin: 0 auto;
+        max-width: 250px;
+      }
+    }
+
+    span {
+      font-weight: $light;
+      transition: all 0.3s ease-in-out;
+      color: $color-claro;
+      @include font-size(14px);
+    }
+  }
+
+  @include media(tablet) {
+    &__container {
+      padding: 100px $space_x2 10px;
+      min-height: 480px;
+      max-width: 80%;
+
+      &__text {
+        h4 {
+          margin-bottom: $space_x3;
+          @include font-size(50px);
+          line-height: 50px;
+        }
+
+        p {
+          margin-bottom: 40px;
+          @include font-size(20px);
+        }
+      }
+
+      span {
+        @include font-size(14px);
+      }
+    }
+  }
+
+  @include media(desktop-s) {
+    &__container {
+      padding: 80px $space_x2 10px;
+      min-height: 450px;
+      max-width: 80%;
+
+      &__text {
+        h4 {
+          margin-bottom: $space_x2;
+          @include font-size(60px);
+          line-height: 60px;
+        }
+
+        p {
+          margin-bottom: 40px;
+          @include font-size(20px);
+        }
+      }
+
+      span {
+        @include font-size(14px);
+      }
+    }
+  }
+
+  @include media(desktop-m) {
+    min-height: 650px;
+
+    &__container {
+      padding: 150px $space_x2 10px;
+      min-height: 650px;
+      max-width: 80%;
+
+      &__text {
+        h4 {
+          margin-bottom: $space_x3;
+          @include font-size(100px);
+          line-height: 100px;
+        }
+
+        p {
+          margin-bottom: 60px;
+          @include font-size(20px);
+        }
+      }
+
+      span {
+        @include font-size(14px);
+      }
+    }
+  }
+}

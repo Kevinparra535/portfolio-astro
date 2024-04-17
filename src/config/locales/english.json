@@ -1,0 +1,89 @@
+{
+  "routes": {
+    "home": "/home",
+    "about": "/about-me",
+    "contact": "/contact",
+    "works": "/works"
+  },
+
+  "links": {
+    "home": "Home",
+    "about": "About Me",
+    "contact": "Contact",
+    "works": "Works",
+    "seeProject": "See Project",
+    "seeAllProjects": "See All Projects"
+  },
+
+  "home": {
+    "hero": {
+      "title": "Hello, my name is",
+      "subtitle": "Kevin Parra.",
+      "copy": "I create transformative digital solutions",
+      "description": "I am a Frontend Developer from Colombia with over 7 years of experience in leading and developing advanced web and mobile applications, using cutting-edge technologies like React and React Native.",
+      "button": "Learn more about me"
+    },
+
+    "about": {
+      "container1": {
+        "title": "Who am I?",
+        "text1": "I am a technical lead and frontend developer specialized in creating user-centered and data-driven solutions.",
+        "text2": "With a track record of leadership, I have delivered projects that impact global users, specializing in <strong>React, React Native, Next.js</strong>, and <strong>Node.js</strong>.",
+        "text3": "Additionally, I have advanced experience in creating <strong>immersive 3D experiences</strong>, using libraries like <strong>Three.js</strong> and applying them in augmented and virtual reality contexts.",
+        "text4": "I have recently worked with these technologies:"
+      }
+    },
+
+    "works": {
+      "title": "Created with passion.",
+      "subtitle": "These are my most significant works."
+    },
+
+    "agencies": {
+      "title": "I've collaborated with",
+      "subtitle": "Here are some of the companies I've worked with."
+    }
+  },
+
+  "about": {
+    "slide": {
+      "line1": "FRONTEND ARCHITECTURE INTERFACE DESIGN MOCKUP TESTING",
+      "line2": "3D MODELING PREPROCESSORS FRONTEND FRAMEWORKS THREEJS AUGMENTED REALITY",
+      "line3": "PROJECT STRUCTURE FRONTEND DEVELOPMENT DESIGN TOOLS AUTOMATION TOOLS"
+    },
+
+    "skills": {
+      "title": "My Skills.",
+      "fundamentals": "Fundamentals",
+      "basic": "Basic",
+      "intermediate": "Intermediate",
+      "advanced": "Advanced",
+      "text1": "I possess skills in a wide range of tools, languages, programs, and methodologies focused on modern and efficient development.",
+      "text2": "How I classify them:",
+      "text3": "<strong>Fundamentals:</strong> Basic theoretical knowledge.",
+      "text4": "<strong>Basic:</strong> Initial practical experience.",
+      "text5": "<strong>Intermediate:</strong> Competent experience with several completed projects.",
+      "text6": " <strong>Advanced:</strong> High proficiency with extensive experience and proven results.",
+      "text7": "Personal:",
+      "text8": "English B2",
+      "text9": "Methodologies and Management:",
+      "text10": "Atomic Design",
+      "text11": "Design Patterns",
+      "text12": "Design and Tools:",
+      "text13": "Information Architecture",
+      "text14": "UI Patterns",
+      "text15": "Design Systems",
+      "text16": "Web Development:",
+      "text17": "3D Experiences and Tools:",
+      "text18": "Other Languages:"
+    },
+
+    "copy": "The process of creating and innovating is a passion I share with the digital world's artists."
+  },
+
+  "footer": {
+    "title": "Let's create something together.",
+    "copy": "Shall we chat? I'll buy the coffee.",
+    "button": "Let's go for coffee!"
+  }
+}

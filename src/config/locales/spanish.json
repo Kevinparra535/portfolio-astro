@@ -1,0 +1,89 @@
+{
+  "routes": {
+    "home": "/inicio",
+    "about": "/sobre-mi",
+    "contact": "/contacto",
+    "works": "/trabajos"
+  },
+
+  "links": {
+    "home": "Inicio",
+    "about": "Sobre mí",
+    "contact": "Contacto",
+    "works": "Trabajos",
+    "seeProject": "Ver proyecto",
+    "seeAllProjects": "Ver todos los proyectos"
+  },
+
+  "home": {
+    "hero": {
+      "title": "Hola, mi nombre es",
+      "subtitle": "Kevin Parra.",
+      "copy": "Creo soluciones digitales transformadoras",
+      "description": "Soy un Desarrollador Frontend de Colombia con más de 7 años de experiencia liderando y desarrollando aplicaciones web y móviles avanzadas, utilizando tecnologías de punta como React y React Native.",
+      "button": "Conoce más sobre mí"
+    },
+
+    "about": {
+      "container1": {
+        "title": "¿Quién soy?",
+        "text1": "Soy un líder técnico y desarrollador frontend especializado en crear experiencias centradas en el usuario y optimizadas por decisiones basadas en datos y métricas de desempeño.",
+        "text2": "Con una trayectoria de liderazgo en equipos, he entregado proyectos que impactan a usuarios globalmente, especializándome en <strong>React, React Native, Next.js</strong> y <strong>Node.js</strong>.",
+        "text3": "Además, tengo experiencia avanzada en crear <strong>experiencias inmersivas 3D</strong>, utilizando librerías como <strong>Three.js</strong> y aplicándolas en contextos de realidad aumentada y virtual.",
+        "text4": "He trabajado recientemente con estas tecnologías:"
+      }
+    },
+
+    "works": {
+      "title": "Creado con pasión.",
+      "subtitle": "Estos son mis trabajos más significativos."
+    },
+
+    "agencies": {
+      "title": "He colaborado con",
+      "subtitle": "Aquí algunas de las empresas con las que he trabajado."
+    }
+  },
+
+  "about": {
+    "slide": {
+      "line1": "ARQUITECTURA FRONTEND DISEÑO DE INTERFACES MAQUETADO TESTING",
+      "line2": "MODELADO 3D PREPROCESADORES FRAMEWORKS FRONTEND THREEJS REALIDAD AUMENTADA",
+      "line3": "GESTIÓN DE PROYECTOS DESARROLLO FRONTEND HERRAMIENTAS DE DISEÑO AUTOMATIZACIÓN"
+    },
+
+    "skills": {
+      "title": "Mis Habilidades.",
+      "fundamentals": "Fundamentos",
+      "basic": "Básico",
+      "intermediate": "Intermedio",
+      "advanced": "Avanzado",
+      "text1": "Poseo habilidades en una amplia gama de herramientas, lenguajes, programas y metodologías orientadas al desarrollo moderno y eficiente.",
+      "text2": "Cómo los clasifico:",
+      "text3": "<strong>Fundamentos:</strong> Conocimientos teóricos básicos.",
+      "text4": "<strong>Básico:</strong> Experiencia práctica inicial.",
+      "text5": "<strong>Intermedio:</strong> Experiencia competente con varios proyectos completados.",
+      "text6": " <strong>Avanzado:</strong> Dominio alto con amplia experiencia y resultados comprobados.",
+      "text7": "Personal:",
+      "text8": "Inglés B2",
+      "text9": "Metodologías y Gestión:",
+      "text10": "Diseño Atómico",
+      "text11": "Patrones de diseño",
+      "text12": "Diseño y Herramientas:",
+      "text13": "Arquitectura de la información",
+      "text14": "Patrones UI",
+      "text15": "Sistemas de diseño",
+      "text16": "Desarrollo web:",
+      "text17": "Experiencias 3D y herramientas:",
+      "text18": "Otros Lenguajes:"
+    },
+
+    "copy": "El proceso de creación e innovación es una pasión que comparto con los artistas del mundo digital."
+  },
+
+  "footer": {
+    "title": "Hagamos algo juntos.",
+    "copy": "¿Charlamos? Yo invito el café.",
+    "button": "¡Vamos por café!"
+  }
+}
