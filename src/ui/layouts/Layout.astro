@@ -3,6 +3,9 @@ import i18next from "i18next";
 import { HeadHrefLangs } from "astro-i18next/components";
 
 import Header from "@ui/layouts/components/Header.astro";
+import Footer from "@ui/layouts/components/Footer.astro";
+
+import "@ui/assets/scss/index.scss";
 
 interface Props {
   title: string;
@@ -25,5 +28,6 @@ const { title } = Astro.props;
   <body>
     <Header language="es" transparent={false} />
     <slot />
+    <Footer />
   </body>
 </html>

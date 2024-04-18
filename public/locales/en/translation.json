@@ -1,7 +1,7 @@
 {
   "routes": {
-    "home": "/home",
-    "about": "/about-me",
+    "home": "/",
+    "about": "/about",
     "contact": "/contact",
     "works": "/works"
   },
@@ -16,6 +16,8 @@
   },
 
   "home": {
+    "pageTitle": "Welcome to my life",
+
     "hero": {
       "title": "Hello, my name is",
       "subtitle": "Kevin Parra.",
@@ -45,6 +47,8 @@
   },
 
   "about": {
+    "pageTitle": "Who is Kevin Parra?",
+
     "slide": {
       "line1": "FRONTEND ARCHITECTURE INTERFACE DESIGN MOCKUP TESTING",
       "line2": "3D MODELING PREPROCESSORS FRONTEND FRAMEWORKS THREEJS AUGMENTED REALITY",
@@ -78,6 +82,10 @@
     },
 
     "copy": "The process of creating and innovating is a passion I share with the digital world's artists."
+  },
+
+  "works": {
+    "pageTitle": "All of this is made with love"
   },
 
   "footer": {

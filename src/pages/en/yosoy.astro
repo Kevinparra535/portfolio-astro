@@ -1,0 +1,8 @@
+---
+import { changeLanguage, t } from "i18next";
+import Layout from "@ui/layouts/Layout.astro";
+
+changeLanguage("en");
+---
+
+<Layout title={t("home.pageTitle")}> <h1>About</h1></Layout>

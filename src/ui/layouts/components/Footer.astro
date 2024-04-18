@@ -1,0 +1,33 @@
+---
+import { t } from "i18next";
+import { Icon } from "astro-icon/components";
+---
+
+<footer class="footer">
+  <div class="footer__container">
+    <div class="footer__container__text">
+      <h4 class="animated reveal-text-up">
+        {t("footer.title")}
+      </h4>
+
+      <p class="animated reveal-text-up">
+        {t("footer.copy")}
+      </p>
+
+      <a
+        href="https://links.kevcoder.co/"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="callToActions negative animated reveal-text-up"
+      >
+        <span></span>
+        {t("footer.button")}
+        <Icon name="heroicons-outline:arrow-narrow-right" />
+      </a>
+    </div>
+
+    <span class="animated reveal-text-up">
+      <sup>©</sup> Kevin Parra López 2024 | @kev.coder
+    </span>
+  </div>
+</footer>

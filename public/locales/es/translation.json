@@ -1,7 +1,7 @@
 {
   "routes": {
-    "home": "/inicio",
-    "about": "/sobre-mi",
+    "home": "/",
+    "about": "/yosoy",
     "contact": "/contacto",
     "works": "/trabajos"
   },
@@ -16,6 +16,7 @@
   },
 
   "home": {
+    "pageTitle": "Bienvenidos a mi vida",
     "hero": {
       "title": "Hola, mi nombre es",
       "subtitle": "Kevin Parra.",
@@ -45,6 +46,7 @@
   },
 
   "about": {
+    "pageTitle": "Quien es Kevin Parra?",
     "slide": {
       "line1": "ARQUITECTURA FRONTEND DISEÑO DE INTERFACES MAQUETADO TESTING",
       "line2": "MODELADO 3D PREPROCESADORES FRAMEWORKS FRONTEND THREEJS REALIDAD AUMENTADA",
@@ -78,6 +80,10 @@
     },
 
     "copy": "El proceso de creación e innovación es una pasión que comparto con los artistas del mundo digital."
+  },
+
+  "works": {
+    "pageTitle": "Todo esto es hecho con amor"
   },
 
   "footer": {
