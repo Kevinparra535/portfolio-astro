@@ -1,7 +1,5 @@
 ---
-import { getRelativeLocaleUrl } from "astro:i18n";
-import i18next, { t } from "i18next";
-import { Trans, HeadHrefLangs } from "astro-i18next/components";
+import { t } from "i18next";
 
 type Props = {
   /**
@@ -19,10 +17,7 @@ const { language, transparent } = Astro.props;
 
 <header class={transparent ? "header transparent" : "header"}>
   <div class="header__container">
-    <a
-      href={`/${language}${getRelativeLocaleUrl("es", "routes.home")}`}
-      class="header__logo"
-    >
+    <a href={`/${language}${t("routes.home")}`} class="header__logo">
       <img
         loading="lazy"
         src="src/ui/assets/images/static/logo.png"
@@ -31,17 +26,17 @@ const { language, transparent } = Astro.props;
     </a>
 
     <nav class="header__links">
-      <a href={`/${language}${getRelativeLocaleUrl("es", "routes.home")}`}>
+      <a href={`/${language}${t("routes.home")}`}>
         {t("links.home")}
         <span></span>
       </a>
 
-      <a href={`/${language}${getRelativeLocaleUrl("es", "routes.about")}`}>
+      <a href={`/${language}${t("routes.about")}`}>
         {t("links.about")}
         <span></span>
       </a>
 
-      <a href={`/${language}${getRelativeLocaleUrl("es", "routes.works")}`}>
+      <a href={`/${language}${t("routes.works")}`}>
         {t("links.works")}
         <span></span>
       </a>
