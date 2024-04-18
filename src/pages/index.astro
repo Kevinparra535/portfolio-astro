@@ -1,13 +1,40 @@
 ---
-import { changeLanguage } from "i18next";
-import Layout from "@ui/layouts/Layout.astro";
-import "@ui/assets/scss/index.scss";
+import { changeLanguage, t } from "i18next";
+import { Icon } from "astro-icon/components";
 
+import Layout from "@ui/layouts/Layout.astro";
+
+import "@ui/assets/scss/index.scss";
 changeLanguage("en");
 ---
 
 <Layout title="Welcome to Kev.Coder Portfolio">
-  <main>
-    <h1>Hero</h1>
+  <main class="main">
+    <div class="main__hero">
+      <h1 class="animated slide-up">
+        {t("home.hero.title")}
+        <br />
+        {t("home.hero.subtitle")}
+      </h1>
+
+      <div class="main__hero__description">
+        <p>
+          {t("home.hero.description")}
+        </p>
+
+        <a
+          href={t("routes.about")}
+          class="callToActions animated reveal-text-up"
+        >
+          <span></span>
+          {t("home.hero.button")}
+          <Icon name="heroicons-outline:arrow-narrow-right" />
+        </a>
+      </div>
+    </div>
+
+    <div class="main__image">
+      <img class="animated slide-up" src="" alt="Kevin Parra Photo" />
+    </div>
   </main>
 </Layout>

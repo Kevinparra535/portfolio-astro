@@ -19,8 +19,7 @@
     "hero": {
       "title": "Hello, my name is",
       "subtitle": "Kevin Parra.",
-      "copy": "I create transformative digital solutions",
-      "description": "I am a Frontend Developer from Colombia with over 7 years of experience in leading and developing advanced web and mobile applications, using cutting-edge technologies like React and React Native.",
+      "description": "I am a Frontend Developer from Colombia with over 7 years of experience in leading and developing advanced web and mobile applications.",
       "button": "Learn more about me"
     },
 

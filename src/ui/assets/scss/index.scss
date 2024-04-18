@@ -14,17 +14,17 @@
 @import "./organims/fonts";
 
 // @import "./atoms/Cursor";
-@import "./containers/Loaders/GeneralLoaders";
+@import "./components/Loaders/GeneralLoaders";
 @import "./components/Header";
 @import "./components/Menu/Menu";
 @import "./components/BurguerIcon";
 @import "./components/Footer";
 
-@import "./containers/Home/Main";
-@import "./containers/Home/About";
-@import "./containers/Home/Works";
-@import "./containers/Home/Agencies";
+@import "./pages/Home/Main";
+@import "./pages/Home/About";
+@import "./pages/Home/Works";
+@import "./pages/Home/Agencies";
 
 @import "./components/Works/ModalWorks";
 
-@import "./containers/About/About";
+@import "./pages/About/About";
