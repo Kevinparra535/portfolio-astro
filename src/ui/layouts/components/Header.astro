@@ -1,5 +1,6 @@
 ---
 import { t } from "i18next";
+import LanguageSelector from "node_modules/astro-i18next/src/components/LanguageSelector.astro";
 
 type Props = {
   /**
@@ -23,10 +24,11 @@ const { language, transparent } = Astro.props;
         src="src/ui/assets/images/static/logo.png"
         alt="Kev Coder Logo"
       />
+      <h1>Kevin Parra</h1>
     </a>
 
     <nav class="header__links">
-      <a href={`/${language}${t("routes.home")}`}>
+      <a href={`/${language}${t("routes.home")}`} class="active">
         {t("links.home")}
         <span></span>
       </a>
@@ -49,24 +51,8 @@ const { language, transparent } = Astro.props;
         {t("links.contact")}
         <span></span>
       </a>
-
-      <a href="/blog">
-        Blog
-        <span></span>
-      </a>
-
-      <!-- <button
-        data-active={language === "es" ? true : false}
-        onClick={() => changeLanguage("es")}
-      >
-        ES
-      </button> -->
-      <!-- <button
-        data-active={language === "en" ? true : false}
-        onClick={() => changeLanguage("en")}
-      >
-        EN
-      </button> -->
     </nav>
+
+    <LanguageSelector class="header__selector" />
   </div>
 </header>

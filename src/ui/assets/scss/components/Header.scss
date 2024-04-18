@@ -32,22 +32,29 @@
 
   &__container {
     padding: $space $space_x2;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     margin: 0 auto;
     width: 100%;
+    align-items: center;
+    @include display-grid;
+    @include grid-template-columns(1fr 1fr 1fr);
   }
 
   &__logo {
     display: flex;
     align-items: center;
     margin-right: $space_x2;
+    text-decoration: none;
+    color: $color-oscuro;
 
     img {
-      width: 80px;
-      height: 40px;
+      width: 100px;
+      aspect-ratio: 1/1;
       object-fit: cover;
+      border-radius: 100%;
+    }
+
+    h1 {
+      @include font-size(25px);
     }
   }
 
@@ -72,38 +79,34 @@
   }
 
   &__links {
+    padding: $space_half;
     display: flex;
-    align-items: flex-start;
+    align-items: center;
+    margin: 0 auto;
+    border-radius: 50px;
+    border: 1px solid $color-oscuro;
+    background-color: $color-claro;
 
     a {
+      padding: $space_half $space;
       display: flex;
       align-items: center;
       justify-content: center;
       flex-direction: column;
-      margin-left: $space_x2;
+      margin: 0 $space_half;
       font-weight: $medium;
       text-decoration: none;
+      border-radius: 25px;
       transition: all 0.3s ease-in-out;
       color: $color-oscuro;
-
-      span {
-        padding: 3px;
-        width: 2px;
-        height: 2px;
-        border-radius: 50%;
-        transition: all 0.3s ease-in-out;
-        background-color: transparent;
-      }
+      @include font-size(14px);
 
       &.active {
-        font-weight: $bolder;
-
-        span {
-          background-color: $color-oscuro;
-        }
+        color: $color-claro;
+        background-color: $color-primario;
 
         &:hover {
-          color: $color-oscuro;
+          color: $color-claro;
         }
       }
 
@@ -113,59 +116,16 @@
     }
   }
 
-  button {
-    margin: 0 0 0 $space_x2;
+  select {
+    margin: 0 0 0 auto;
+    max-width: max-content;
     outline: none;
-    border: none;
+    border: 1px solid $color-oscuro;
     border-radius: 5px;
     font-family: $Fuente1;
     font-weight: $bolder;
     transition: all 0.3s ease-in-out;
     cursor: pointer;
     color: $color-oscuro;
-
-    &[data-active="true"] {
-      outline: 2px solid $color-oscuro;
-
-      &:hover {
-        color: $color-oscuro;
-        background-color: transparent;
-      }
-    }
-
-    &:hover {
-      background-color: $color-oscuro;
-      color: $color-bg-claro;
-    }
-  }
-
-  @include media(tablet) {
-    &__container {
-      padding: $space_x4 $space_x2;
-      width: 90%;
-    }
-
-    &__logo {
-      img {
-        width: 80px;
-        height: 40px;
-        object-fit: cover;
-        image-rendering: optimizeQuality;
-      }
-    }
-  }
-
-  @include media(desktop-s) {
-    &__container {
-      padding: $space_x4 $space_x2;
-      width: 80%;
-    }
-
-    &__logo {
-      img {
-        width: 100px;
-        height: 50px;
-      }
-    }
   }
 }
