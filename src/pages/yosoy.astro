@@ -1,8 +1,534 @@
 ---
-import { changeLanguage, t } from "i18next";
-import Layout from "@ui/layouts/Layout.astro";
+import { changeLanguage, t } from 'i18next';
+import Layout from '@ui/layouts/Layout.astro';
 
-changeLanguage("es");
+changeLanguage('es');
 ---
 
-<Layout title={t("home.pageTitle")}> <h1>About</h1></Layout>
+<Layout title={t('home.pageTitle')}>
+  <div class='abouts__container animated slide-up'>
+    <h2 class='animated reveal-text-up'>
+      {t('home.about.container1.title')}
+    </h2>
+
+    <div class='abouts__container__text'>
+      <p class='animated reveal-text-up'>
+        {t('home.about.container1.text1')}
+      </p>
+
+      <p class='animated reveal-text-up'>
+        {t('home.about.container1.text2')}
+      </p>
+
+      <p class='animated reveal-text-up'>
+        {t('home.about.container1.text3')}
+      </p>
+    </div>
+  </div>
+
+  <div class='abouts__slide animated slide-up'>
+    <div class='abouts__slide__rss'>
+      <p>
+        <span class='left'>
+          {' '}
+          {t('about.slide.line1')}
+        </span>
+        <span class='left2'>
+          {' '}
+          {t('about.slide.line1')}
+        </span>
+      </p>
+
+      <p>
+        <span class='right'>
+          {' '}
+          {t('about.slide.line2')}
+        </span>
+        <span class='right2'>
+          {' '}
+          {t('about.slide.line2')}
+        </span>
+      </p>
+
+      <p>
+        <span class='left'>
+          {' '}
+          {t('about.slide.line3')}
+        </span>
+        <span class='left2'>
+          {' '}
+          {t('about.slide.line3')}
+        </span>
+      </p>
+    </div>
+  </div>
+
+  <div class='abouts__container'>
+    <h2 class='animated reveal-text-up'>
+      {t('about.skills.title')}
+    </h2>
+
+    <div class='abouts__container__text'>
+      <p class='animated reveal-text-up'>
+        {t('about.skills.text1')}
+      </p>
+
+      <p class='animated reveal-text-up'>
+        {t('about.skills.text2')}
+      </p>
+
+      <p class='animated reveal-text-up'>
+        {t('about.skills.text3')}
+      </p>
+
+      <p class='animated reveal-text-up'>
+        {t('about.skills.text4')}
+      </p>
+
+      <p class='animated reveal-text-up'>
+        {t('about.skills.text5')}
+      </p>
+
+      <p class='animated reveal-text-up'>
+        {t('about.skills.text6')}
+      </p>
+
+      <h3 class='animated reveal-text-up'>
+        {t('about.skills.text7')}
+      </h3>
+      <ul class='animated reveal-text-up list'>
+        <li class='animated slide-up'>
+          {t('about.skills.text8')}
+        </li>
+      </ul>
+
+      <h3 class='animated reveal-text-up'>
+        {t('about.skills.text9')}
+      </h3>
+      <ul class='animated reveal-text-up list'>
+        <li class='animated slide-up'>BEM</li>
+
+        <li class='animated slide-up'>SMACSS</li>
+
+        <li class='animated slide-up'>ITCSS</li>
+
+        <li class='animated slide-up'>
+          {t('about.skills.text10')}
+        </li>
+
+        <li class='animated slide-up'>
+          {t('about.skills.text11')}
+        </li>
+      </ul>
+
+      <h3 class='animated reveal-text-up'>
+        {t('about.skills.text12')}
+      </h3>
+      <ul class='animated reveal-text-up'>
+        <li class='animated slide-up'>UI</li>
+
+        <li class='animated slide-up'>UX</li>
+
+        <li class='animated slide-up'>
+          {t('about.skills.text13')}
+        </li>
+
+        <li class='animated slide-up'>
+          {' '}
+          {t('about.skills.text14')}
+        </li>
+
+        <li class='animated slide-up'>Design Review</li>
+
+        <li class='animated slide-up'>Wireframes</li>
+
+        <li class='animated slide-up'>Prototipado</li>
+
+        <li class='animated slide-up'>User research</li>
+
+        <li class='animated slide-up'>
+          {' '}
+          {t('about.skills.text15')}
+        </li>
+
+        <li class='animated slide-up'>User Testing</li>
+
+        <li class='animated slide-up'>A/B Testing</li>
+
+        <li class='animated slide-up'>
+          Photoshop{' '}
+          <small>
+            ({t('about.skills.advanced')})
+          </small>
+        </li>
+
+        <li class='animated slide-up'>
+          Illustrator{' '}
+          <small>
+            ({t('about.skills.basic')})
+          </small>
+        </li>
+
+        <li class='animated slide-up'>
+          Adobe XD{' '}
+          <small>
+            ({t('about.skills.advanced')})
+          </small>
+        </li>
+
+        <li class='animated slide-up'>
+          Figma{' '}
+          <small>
+            ({t('about.skills.intermediate')})
+          </small>
+        </li>
+
+        <li class='animated slide-up'>
+          Storybook{' '}
+          <small>
+            ({t('about.skills.basic')})
+          </small>
+        </li>
+      </ul>
+
+      <h3 class='animated reveal-text-up'>
+        {t('about.skills.text16')}
+      </h3>
+      <ul class='animated reveal-text-up'>
+        <li class='animated slide-up'>
+          Html{' '}
+          <small>
+            ({t('about.skills.advanced')})
+          </small>
+        </li>
+
+        <li class='animated slide-up'>
+          CSS{' '}
+          <small>
+            ({t('about.skills.advanced')})
+          </small>
+        </li>
+
+        <li class='animated slide-up'>
+          JavaScript (ES6+){' '}
+          <small>
+            ({t('about.skills.advanced')})
+          </small>
+        </li>
+
+        <li class='animated slide-up'>
+          Git / GitHub{' '}
+          <small>
+            ({t('about.skills.advanced')})
+          </small>
+        </li>
+
+        <li class='animated slide-up'>
+          NPM / Yarn{' '}
+          <small>
+            ({t('about.skills.advanced')})
+          </small>
+        </li>
+
+        <li class='animated slide-up'>
+          Sass / Less / Stylus{' '}
+          <small>
+            ({t('about.skills.advanced')})
+          </small>
+        </li>
+
+        <li class='animated slide-up'>
+          Webpack{' '}
+          <small>
+            ({t('about.skills.advanced')})
+          </small>
+        </li>
+
+        <li class='animated slide-up'>
+          Gulp{' '}
+          <small>
+            ({t('about.skills.intermediate')})
+          </small>
+        </li>
+
+        <li class='animated slide-up'>
+          Rollup{' '}
+          <small>
+            ({t('about.skills.basic')})
+          </small>
+        </li>
+
+        <li class='animated slide-up'>
+          React{' '}
+          <small>
+            ({t('about.skills.advanced')})
+          </small>
+        </li>
+
+        <li class='animated slide-up'>
+          Angular <small>(Fundamentos)</small>
+        </li>
+
+        <li class='animated slide-up'>
+          Vue.js{' '}
+          <small>
+            ({t('about.skills.basic')})
+          </small>
+        </li>
+
+        <li class='animated slide-up'>
+          Svelte{' '}
+          <small>
+            ({t('about.skills.basic')})
+          </small>
+        </li>
+
+        <li class='animated slide-up'>
+          Redux{' '}
+          <small>
+            ({t('about.skills.intermediate')})
+          </small>
+        </li>
+
+        <li class='animated slide-up'>
+          Styled Components{' '}
+          <small>
+            ({t('about.skills.intermediate')})
+          </small>
+        </li>
+
+        <li class='animated slide-up'>
+          CSS Modules{' '}
+          <small>
+            ({t('about.skills.advanced')})
+          </small>
+        </li>
+
+        <li class='animated slide-up'>
+          Styled JSX{' '}
+          <small>
+            ({t('about.skills.advanced')})
+          </small>
+        </li>
+
+        <li class='animated slide-up'>
+          Web Components{' '}
+          <small>
+            ({t('about.skills.intermediate')})
+          </small>
+        </li>
+
+        <li class='animated slide-up'>
+          Tailwind CSS{' '}
+          <small>
+            ({t('about.skills.advanced')})
+          </small>
+        </li>
+
+        <li class='animated slide-up'>
+          Bootstrap{' '}
+          <small>
+            ({t('about.skills.advanced')})
+          </small>
+        </li>
+
+        <li class='animated slide-up'>
+          Material UI{' '}
+          <small>
+            ({t('about.skills.intermediate')})
+          </small>
+        </li>
+
+        <li class='animated slide-up'>
+          Foundation{' '}
+          <small>
+            ({t('about.skills.intermediate')})
+          </small>
+        </li>
+
+        <li class='animated slide-up'>
+          Jest + Enzyme{' '}
+          <small>
+            ({t('about.skills.intermediate')})
+          </small>
+        </li>
+
+        <li class='animated slide-up'>
+          react-testing-library{' '}
+          <small>
+            ({t('about.skills.intermediate')})
+          </small>
+        </li>
+
+        <li class='animated slide-up'>
+          PWA's{' '}
+          <small>
+            ({t('about.skills.advanced')})
+          </small>
+        </li>
+
+        <li class='animated slide-up'>
+          TypeScript <small>(Fundamentos)</small>
+        </li>
+
+        <li class='animated slide-up'>
+          NodeJS{' '}
+          <small>
+            ({t('about.skills.intermediate')})
+          </small>
+        </li>
+
+        <li class='animated slide-up'>
+          Firebase{' '}
+          <small>
+            ({t('about.skills.advanced')})
+          </small>
+        </li>
+
+        <li class='animated slide-up'>
+          PostgresSQL{' '}
+          <small>
+            ({t('about.skills.basic')})
+          </small>
+        </li>
+
+        <li class='animated slide-up'>
+          PostgresSQL{' '}
+          <small>
+            ({t('about.skills.basic')})
+          </small>
+        </li>
+
+        <li class='animated slide-up'>
+          ExpressJS{' '}
+          <small>
+            ({t('about.skills.basic')})
+          </small>
+        </li>
+
+        <li class='animated slide-up'>
+          Postman{' '}
+          <small>
+            ({t('about.skills.advanced')})
+          </small>
+        </li>
+
+        <li class='animated slide-up'>
+          Insomnia{' '}
+          <small>
+            ({t('about.skills.advanced')})
+          </small>
+        </li>
+
+        <li class='animated slide-up'>
+          Docker{' '}
+          <small>
+            ({t('about.skills.basic')})
+          </small>
+        </li>
+
+        <li class='animated slide-up'>
+          WPO{' '}
+          <small>
+            ({t('about.skills.advanced')})
+          </small>
+        </li>
+      </ul>
+
+      <h3 class='animated reveal-text-up'>
+        {t('about.skills.text17')}
+      </h3>
+      <ul class='animated reveal-text-up'>
+        <li class='animated slide-up'>
+          Spark AR{' '}
+          <small>
+            ({t('about.skills.advanced')})
+          </small>
+        </li>
+
+        <li class='animated slide-up'>
+          Threejs{' '}
+          <small>
+            ({t('about.skills.advanced')})
+          </small>
+        </li>
+
+        <li class='animated slide-up'>
+          Three React Fiber{' '}
+          <small>
+            ({t('about.skills.advanced')})
+          </small>
+        </li>
+
+        <li class='animated slide-up'>
+          React Spring{' '}
+          <small>
+            ({t('about.skills.advanced')})
+          </small>
+        </li>
+
+        <li class='animated slide-up'>
+          Blender{' '}
+          <small>
+            ({t('about.skills.basic')})
+          </small>
+        </li>
+
+        <li class='animated slide-up'>
+          Spline{' '}
+          <small>
+            ({t('about.skills.basic')})
+          </small>
+        </li>
+
+        <li class='animated slide-up'>
+          Adobe Aero{' '}
+          <small>
+            ({t('about.skills.basic')})
+          </small>
+        </li>
+
+        <li class='animated slide-up'>
+          WebXR{' '}
+          <small>
+            ({t('about.skills.intermediate')})
+          </small>
+        </li>
+
+        <li class='animated slide-up'>
+          WebGL{' '}
+          <small>
+            ({t('about.skills.intermediate')})
+          </small>
+        </li>
+
+        <li class='animated slide-up'>
+          WebVR{' '}
+          <small>
+            ({t('about.skills.intermediate')})
+          </small>
+        </li>
+      </ul>
+
+      <h3 class='animated reveal-text-up'>
+        {t('about.skills.text18')}
+      </h3>
+      <ul class='animated reveal-text-up list'>
+        <li class='animated slide-up'>
+          Java SE{' '}
+          <small>
+            ({t('about.skills.basic')})
+          </small>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class='abouts__copy animated slide-up'>
+    <p class='animated slide-up'>
+      "{t('about.copy')}
+      <br />
+      <span class='animated slide-up'>- Kevin Parra</span>
+    </p>
+  </div>
+</Layout>

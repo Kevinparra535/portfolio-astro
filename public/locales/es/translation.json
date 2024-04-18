@@ -28,7 +28,7 @@
       "container1": {
         "title": "¿Quién soy?",
         "text1": "Soy un líder técnico y desarrollador frontend especializado en crear experiencias centradas en el usuario y optimizadas por decisiones basadas en datos y métricas de desempeño.",
-        "text2": "Con una trayectoria de liderazgo en equipos, he entregado proyectos que impactan a usuarios globalmente, especializándome en <strong>React, React Native, Next.js</strong> y <strong>Node.js</strong>.",
+        "text2": "Con una trayectoria de liderazgo en equipos, he entregado proyectos que impactan a usuarios globalmente, especializándome en <0>React, React Native, Next.js</0> y <strong>Node.js</strong>.",
         "text3": "Además, tengo experiencia avanzada en crear <strong>experiencias inmersivas 3D</strong>, utilizando librerías como <strong>Three.js</strong> y aplicándolas en contextos de realidad aumentada y virtual.",
         "text4": "He trabajado recientemente con estas tecnologías:"
       }
