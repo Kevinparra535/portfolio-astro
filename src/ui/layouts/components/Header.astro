@@ -1,12 +1,12 @@
 ---
-import { t } from "i18next";
-import LanguageSelector from "node_modules/astro-i18next/src/components/LanguageSelector.astro";
+import { t } from 'i18next';
+import LanguageSelector from 'node_modules/astro-i18next/src/components/LanguageSelector.astro';
 
 type Props = {
   /**
    *
    */
-  language: "en" | "es";
+  language: 'en' | 'es';
   /**
    *
    */
@@ -14,45 +14,45 @@ type Props = {
 };
 
 const { language, transparent } = Astro.props;
+const { pathname } = Astro.url;
+console.log(pathname);
 ---
 
-<header class={transparent ? "header transparent" : "header"}>
-  <div class="header__container">
-    <a href={t("routes.home")} class="header__logo">
-      <img
-        loading="lazy"
-        src="src/ui/assets/images/static/logo.png"
-        alt="Kev Coder Logo"
-      />
+<header class={transparent ? 'header transparent' : 'header'}>
+  <div class='header__container'>
+    <a href={t('routes.home')} class='header__logo'>
+      <img loading='lazy' src='src/ui/assets/images/static/logo.png' alt='Kev Coder Logo' />
       <h1>Kevin Parra</h1>
     </a>
 
-    <nav class="header__links">
-      <a href={t("routes.home")} class="active">
-        {t("links.home")}
-        <span></span>
-      </a>
-
-      <a href={t("routes.about")}>
-        {t("links.about")}
-        <span></span>
-      </a>
-
-      <a href={t("routes.works")}>
-        {t("links.works")}
+    <nav class='header__links'>
+      <a href={t('routes.home')} class={pathname === t('routes.home') ? 'active' : ''}>
+        {t('links.home')}
         <span></span>
       </a>
 
       <a
-        href="https://links.kevcoder.co/"
-        target="_blank"
-        rel="noopener noreferrer"
+        href={t('routes.about')}
+        class={pathname.replace('/', '') === t('routes.about') ? 'active' : ''}
       >
-        {t("links.contact")}
+        {t('links.about')}
+        <span></span>
+      </a>
+
+      <a
+        href={t('routes.works')}
+        class={pathname.replace('/', '') === t('routes.works') ? 'active' : ''}
+      >
+        {t('links.works')}
+        <span></span>
+      </a>
+
+      <a href='https://links.kevcoder.co/' target='_blank' rel='noopener noreferrer'>
+        {t('links.contact')}
         <span></span>
       </a>
     </nav>
 
-    <LanguageSelector class="header__selector" />
+    <LanguageSelector class='header__selector' />
   </div>
 </header>

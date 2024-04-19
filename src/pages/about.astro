@@ -1,8 +1,9 @@
 ---
-import { changeLanguage, t } from 'i18next';
-import Layout from '@ui/layouts/Layout.astro';
+import { changeLanguage, t } from "i18next";
+import Layout from "@ui/layouts/Layout.astro";
+import { Trans } from "astro-i18next/components";
 
-changeLanguage('es');
+changeLanguage("es");
 ---
 
 <Layout title={t('home.pageTitle')}>
@@ -13,15 +14,27 @@ changeLanguage('es');
 
     <div class='abouts__container__text'>
       <p class='animated reveal-text-up'>
-        {t('home.about.container1.text1')}
+        <Trans i18nKey='home.about.container1.text1'>
+          Soy un líder técnico y desarrollador frontend especializado en crear experiencias
+          centradas en el usuario y optimizadas por decisiones basadas en datos y métricas de
+          desempeño.
+        </Trans>
       </p>
 
       <p class='animated reveal-text-up'>
-        {t('home.about.container1.text2')}
+        <Trans i18nKey='home.about.container1.text2'>
+          Con una trayectoria de liderazgo en equipos, he entregado proyectos que impactan a
+          usuarios globalmente, especializándome en <strong>React, React Native, Next.js</strong>
+          y <strong>Node.js</strong>.
+        </Trans>
       </p>
 
       <p class='animated reveal-text-up'>
-        {t('home.about.container1.text3')}
+        <Trans i18nKey='home.about.container1.text3'>
+          Además, tengo experiencia avanzada en crear <strong>experiencias inmersivas 3D</strong>,
+          utilizando librerías como <strong>Three.js</strong> y aplicándolas en contextos de realidad
+          aumentada y virtual.", "text4": "He trabajado recientemente con estas tecnologías:
+        </Trans>
       </p>
     </div>
   </div>
@@ -78,24 +91,33 @@ changeLanguage('es');
       </p>
 
       <p class='animated reveal-text-up'>
-        {t('about.skills.text3')}
+        <Trans i18nKey='about.skills.text3'>
+          <strong>Fundamentos:</strong> Conocimientos teóricos básicos.
+        </Trans>
       </p>
 
       <p class='animated reveal-text-up'>
-        {t('about.skills.text4')}
+        <Trans i18nKey='about.skills.text4'>
+          <strong>Básico:</strong> Experiencia práctica inicial.
+        </Trans>
       </p>
 
       <p class='animated reveal-text-up'>
-        {t('about.skills.text5')}
+        <Trans i18nKey='about.skills.text5'>
+          <strong>Intermedio:</strong> Experiencia competente con varios proyectos completados.
+        </Trans>
       </p>
 
       <p class='animated reveal-text-up'>
-        {t('about.skills.text6')}
+        <Trans i18nKey='about.skills.text6'>
+          <strong>Avanzado:</strong> Dominio alto con amplia experiencia y resultados comprobados.
+        </Trans>
       </p>
 
       <h3 class='animated reveal-text-up'>
         {t('about.skills.text7')}
       </h3>
+
       <ul class='animated reveal-text-up list'>
         <li class='animated slide-up'>
           {t('about.skills.text8')}

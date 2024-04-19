@@ -1,9 +1,8 @@
 {
   "routes": {
     "home": "/",
-    "about": "/yosoy",
-    "contact": "/contacto",
-    "works": "/trabajos"
+    "about": "about",
+    "works": "trabajos"
   },
 
   "links": {
@@ -28,8 +27,8 @@
       "container1": {
         "title": "¿Quién soy?",
         "text1": "Soy un líder técnico y desarrollador frontend especializado en crear experiencias centradas en el usuario y optimizadas por decisiones basadas en datos y métricas de desempeño.",
-        "text2": "Con una trayectoria de liderazgo en equipos, he entregado proyectos que impactan a usuarios globalmente, especializándome en <0>React, React Native, Next.js</0> y <strong>Node.js</strong>.",
-        "text3": "Además, tengo experiencia avanzada en crear <strong>experiencias inmersivas 3D</strong>, utilizando librerías como <strong>Three.js</strong> y aplicándolas en contextos de realidad aumentada y virtual.",
+        "text2": "Con una trayectoria de liderazgo en equipos, he entregado proyectos que impactan a usuarios globalmente, especializándome en <0>React, React Native, Next.js</0> y <1>Node.js</1>.",
+        "text3": "Además, tengo experiencia avanzada en crear <0>experiencias inmersivas 3D</0>, utilizando librerías como <1>Three.js</1> y aplicándolas en contextos de realidad aumentada y virtual.",
         "text4": "He trabajado recientemente con estas tecnologías:"
       }
     },
@@ -61,10 +60,10 @@
       "advanced": "Avanzado",
       "text1": "Poseo habilidades en una amplia gama de herramientas, lenguajes, programas y metodologías orientadas al desarrollo moderno y eficiente.",
       "text2": "Cómo los clasifico:",
-      "text3": "<strong>Fundamentos:</strong> Conocimientos teóricos básicos.",
-      "text4": "<strong>Básico:</strong> Experiencia práctica inicial.",
-      "text5": "<strong>Intermedio:</strong> Experiencia competente con varios proyectos completados.",
-      "text6": " <strong>Avanzado:</strong> Dominio alto con amplia experiencia y resultados comprobados.",
+      "text3": "<0>Fundamentos:</0> Conocimientos teóricos básicos.",
+      "text4": "<0>Básico:</0> Experiencia práctica inicial.",
+      "text5": "<0>Intermedio:</0> Experiencia competente con varios proyectos completados.",
+      "text6": "<0>Avanzado:</0> Dominio alto con amplia experiencia y resultados comprobados.",
       "text7": "Personal:",
       "text8": "Inglés B2",
       "text9": "Metodologías y Gestión:",

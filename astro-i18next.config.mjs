@@ -3,7 +3,7 @@ export default {
   locales: ['en', 'es'],
   routes: {
     es: {
-      about: 'quiensoy',
+      about: 'about',
       works: 'trabajos',
     },
     en: {

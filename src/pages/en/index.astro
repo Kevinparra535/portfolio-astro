@@ -1,138 +1,144 @@
 ---
 import { changeLanguage, t } from "i18next";
+import { Trans } from "astro-i18next/components";
 import { Icon } from "astro-icon/components";
 import Layout from "@ui/layouts/Layout.astro";
 
 changeLanguage("en");
 ---
 
-<Layout title={t("home.pageTitle")}>
-  <main class="main">
-    <div class="main__hero">
-      <h1 class="animated slide-up">
-        {t("home.hero.title")}
+<Layout title={t('home.pageTitle')}>
+  <main class='main'>
+    <div class='main__hero'>
+      <h1 class='animated slide-up'>
+        {t('home.hero.title')}
         <br />
-        {t("home.hero.subtitle")}
+        {t('home.hero.subtitle')}
       </h1>
 
-      <div class="main__hero__description">
+      <div class='main__hero__description'>
         <p>
-          {t("home.hero.description")}
+          {t('home.hero.description')}
         </p>
 
-        <a
-          href={t("routes.about")}
-          class="callToActions animated reveal-text-up"
-        >
+        <a href={t('routes.about')} class='callToActions animated reveal-text-up'>
           <span></span>
-          {t("home.hero.button")}
-          <Icon name="heroicons-outline:arrow-narrow-right" />
+          {t('home.hero.button')}
+          <Icon name='heroicons-outline:arrow-narrow-right' />
         </a>
       </div>
     </div>
 
-    <div class="main__image">
-      <img class="animated slide-up" src="" alt="Kevin Parra Photo" />
+    <div class='main__image'>
+      <img class='animated slide-up' src='' alt='Kevin Parra Photo' />
     </div>
   </main>
 
-  <section class="about">
-    <div class="about__container">
-      <h2 class="animated reveal-text-up">
-        {t("home.about.container1.title")}
+  <section class='about'>
+    <div class='about__container'>
+      <h2 class='animated reveal-text-up'>
+        {t('home.about.container1.title')}
       </h2>
 
-      <div class="about__container__text">
-        <p class="animated reveal-text-up">
-          {t("home.about.container1.text1")}
+      <div class='about__container__text'>
+        <p class='animated reveal-text-up'>
+          {t('home.about.container1.text1')}
         </p>
 
-        <p class="animated reveal-text-up">
-          {t("home.about.container1.text2")}
+        <p class='animated reveal-text-up'>
+          <Trans i18nKey='home.about.container1.text2'>
+            Con una trayectoria de liderazgo en equipos, he entregado proyectos que impactan a
+            usuarios globalmente, especializándome en <strong>React, React Native, Next.js</strong>
+            y <strong>Node.js</strong>.
+          </Trans>
         </p>
 
-        <p class="animated reveal-text-up">
-          {t("home.about.container1.text3")}
+        <p class='animated reveal-text-up'>
+          <Trans i18nKey='home.about.container1.text3'>
+            Además, tengo experiencia avanzada en crear <strong>experiencias inmersivas 3D</strong
+            >, utilizando librerías como <strong>Three.js</strong> y aplicándolas en contextos de realidad
+            aumentada y virtual.", "text4": "He trabajado recientemente con estas tecnologías:
+          </Trans>
         </p>
 
-        <p class="animated reveal-text-up">
-          {t("home.about.container1.text4")}
+        <p class='animated reveal-text-up'>
+          {t('home.about.container1.text4')}
         </p>
 
-        <ul class="animated reveal-text-up">
-          <li class="animated slide-up">JavaScript (ES6+)</li>
+        <ul class='animated reveal-text-up'>
+          <li class='animated slide-up'>JavaScript (ES6+)</li>
 
-          <li class="animated slide-up">Html - (S)CSS</li>
+          <li class='animated slide-up'>Html - (S)CSS</li>
 
-          <li class="animated slide-up">React.js</li>
+          <li class='animated slide-up'>React.js</li>
 
-          <li class="animated slide-up">React Native</li>
+          <li class='animated slide-up'>React Native</li>
 
-          <li class="animated slide-up">Jest + Enzyme</li>
+          <li class='animated slide-up'>Jest + Enzyme</li>
 
-          <li class="animated slide-up">react-testing-library</li>
+          <li class='animated slide-up'>react-testing-library</li>
 
-          <li class="animated slide-up">Tailwind CSS</li>
+          <li class='animated slide-up'>Tailwind CSS</li>
 
-          <li class="animated slide-up">PWA's</li>
+          <li class='animated slide-up'>PWA's</li>
 
-          <li class="animated slide-up">Webpack</li>
+          <li class='animated slide-up'>Webpack</li>
 
-          <li class="animated slide-up">Three.js</li>
+          <li class='animated slide-up'>Three.js</li>
 
-          <li class="animated slide-up">WebXR</li>
+          <li class='animated slide-up'>WebXR</li>
         </ul>
       </div>
     </div>
   </section>
 
-  <section class="agencies">
-    <div class="agencies__header">
-      <div class="agencies__header__container">
-        <h2 class="animated reveal-text-up">
-          {t("home.agencies.title")}
+  <section class='agencies'>
+    <div class='agencies__header'>
+      <div class='agencies__header__container'>
+        <h2 class='animated reveal-text-up'>
+          {t('home.agencies.title')}
         </h2>
-        <p class="animated reveal-text-up">
-          {t("home.agencies.subtitle")}
+        <p class='animated reveal-text-up'>
+          {t('home.agencies.subtitle')}
         </p>
       </div>
     </div>
 
-    <div class="agencies__container">
+    <div class='agencies__container'>
       <img
-        class="animated reveal-text-up"
-        src="../../src/ui/assets/images/static/Portinos.png"
-        alt="Portinos logo"
+        class='animated reveal-text-up'
+        src='../../src/ui/assets/images/static/Portinos.png'
+        alt='Portinos logo'
       />
       <img
-        class="animated reveal-text-up"
-        src="../../src/ui/assets/images/static/Intel.png"
-        alt="Intel logo"
+        class='animated reveal-text-up'
+        src='../../src/ui/assets/images/static/Intel.png'
+        alt='Intel logo'
       />
       <img
-        class="animated reveal-text-up"
-        src="../../src/ui/assets/images/static/Kcumen.svg"
-        alt="Kcumen logo"
+        class='animated reveal-text-up'
+        src='../../src/ui/assets/images/static/Kcumen.svg'
+        alt='Kcumen logo'
       />
       <img
-        class="animated reveal-text-up"
-        src="../../src/ui/assets/images/static/Sena.png"
-        alt="Sena logo"
+        class='animated reveal-text-up'
+        src='../../src/ui/assets/images/static/Sena.png'
+        alt='Sena logo'
       />
       <img
-        class="animated reveal-text-up"
-        src="../../src/ui/assets/images/static/arcor.png"
-        alt="Arcor Logo"
+        class='animated reveal-text-up'
+        src='../../src/ui/assets/images/static/arcor.png'
+        alt='Arcor Logo'
       />
       <img
-        class="animated reveal-text-up"
-        src="../../src/ui/assets/images/static/Onu.png"
-        alt="Onu logo"
+        class='animated reveal-text-up'
+        src='../../src/ui/assets/images/static/Onu.png'
+        alt='Onu logo'
       />
       <img
-        class="animated reveal-text-up"
-        src="../../src/ui/assets/images/static/logoHemav.png"
-        alt="Hemav logo"
+        class='animated reveal-text-up'
+        src='../../src/ui/assets/images/static/logoHemav.png'
+        alt='Hemav logo'
       />
     </div>
   </section>

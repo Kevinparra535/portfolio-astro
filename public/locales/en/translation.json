@@ -1,9 +1,8 @@
 {
   "routes": {
-    "home": "/",
-    "about": "/about",
-    "contact": "/contact",
-    "works": "/works"
+    "home": "/en/",
+    "about": "about",
+    "works": "works"
   },
 
   "links": {
@@ -29,8 +28,8 @@
       "container1": {
         "title": "Who am I?",
         "text1": "I am a technical lead and frontend developer specialized in creating user-centered and data-driven solutions.",
-        "text2": "With a track record of leadership, I have delivered projects that impact global users, specializing in <strong>React, React Native, Next.js</strong>, and <strong>Node.js</strong>.",
-        "text3": "Additionally, I have advanced experience in creating <strong>immersive 3D experiences</strong>, using libraries like <strong>Three.js</strong> and applying them in augmented and virtual reality contexts.",
+        "text2": "With a track record of leadership, I have delivered projects that impact global users, specializing in <0>React, React Native, Next.js</0>, and <1>Node.js</1>.",
+        "text3": "Additionally, I have advanced experience in creating <0>immersive 3D experiences</0>, using libraries like <1>Three.js</1> and applying them in augmented and virtual reality contexts.",
         "text4": "I have recently worked with these technologies:"
       }
     },
@@ -63,10 +62,10 @@
       "advanced": "Advanced",
       "text1": "I possess skills in a wide range of tools, languages, programs, and methodologies focused on modern and efficient development.",
       "text2": "How I classify them:",
-      "text3": "<strong>Fundamentals:</strong> Basic theoretical knowledge.",
-      "text4": "<strong>Basic:</strong> Initial practical experience.",
-      "text5": "<strong>Intermediate:</strong> Competent experience with several completed projects.",
-      "text6": " <strong>Advanced:</strong> High proficiency with extensive experience and proven results.",
+      "text3": "<0>Fundamentals:</0> Basic theoretical knowledge.",
+      "text4": "<0>Basic:</0> Initial practical experience.",
+      "text5": "<0>Intermediate:</0> Competent experience with several completed projects.",
+      "text6": "<0>Advanced:</0> High proficiency with extensive experience and proven results.",
       "text7": "Personal:",
       "text8": "English B2",
       "text9": "Methodologies and Management:",
