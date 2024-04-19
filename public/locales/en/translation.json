@@ -1,6 +1,6 @@
 {
   "routes": {
-    "home": "/en/",
+    "home": "/en",
     "about": "about",
     "works": "works"
   },
@@ -15,7 +15,7 @@
   },
 
   "home": {
-    "pageTitle": "Welcome to my life",
+    "pageTitle": "Welcome!!!",
 
     "hero": {
       "title": "Hello, my name is",

@@ -1,18 +1,20 @@
-@import "../../tokens/colors";
-@import "../../tokens/spacings";
-@import "../../tokens/typos";
+@import '../../tokens/colors';
+@import '../../tokens/spacings';
+@import '../../tokens/typos';
 
 .main {
-  padding: 120px 0 0;
+  padding: 150px 0 0;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+  flex-direction: column;
   margin: 0 auto;
   width: 100%;
-  max-width: 80%;
+  max-width: 90%;
   height: 100dvh;
   min-height: 600px;
   user-select: none;
+  transition: all 0.3s ease-in-out;
 
   &__hero {
     margin: 0 auto;
@@ -27,8 +29,8 @@
       transition: all 0.3s ease-in-out;
       animation: reveal-text-up 1s ease-in-out 0.5s both;
       color: $color-oscuro;
-      @include font-size(70px);
-      line-height: 70px;
+      @include font-size(40px);
+      line-height: 40px;
     }
 
     &__description {
@@ -52,11 +54,57 @@
   }
 
   &__image {
-    width: 400px;
-    height: 70dvh;
-    border-radius: 15px;
-    background-color: $color-oscuro;
-    transition: all 0.3s ease-in-out;
-    animation: reveal-text-up 1s ease-in-out 1s both;
+    display: none;
+  }
+
+  @include media(tablet) {
+    max-width: 80%;
+    flex-direction: column;
+    justify-content: center;
+
+    &__hero {
+      margin: 0 auto;
+
+      h1 {
+        @include font-size(50px);
+        line-height: 50px;
+      }
+
+      &__description {
+        p {
+          padding-bottom: $space_x2;
+          @include font-size(18px);
+        }
+      }
+    }
+
+    &__image {
+      margin-top: $space_x4;
+      display: block;
+      width: 500px;
+      height: 400px;
+      border-radius: 15px;
+      background-color: $color-oscuro;
+      transition: all 0.3s ease-in-out;
+      animation: reveal-text-up 1s ease-in-out 1s both;
+    }
+  }
+
+  @include media(desktop-s) {
+    flex-direction: row;
+    justify-content: space-between;
+
+    &__image {
+      display: none;
+      margin: 0;
+    }
+  }
+
+  @include media(desktop-l) {
+    &__image {
+      display: block;
+      width: 400px;
+      height: 70dvh;
+    }
   }
 }
